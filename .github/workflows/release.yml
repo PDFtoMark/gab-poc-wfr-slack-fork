@@ -1,0 +1,8 @@
+name: Release
+on:
+  pull_request:
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "attacker-controlled workflow named Release"; exit 1
